@@ -1,29 +1,28 @@
-def is_divisible_by_three?(number)
-	return true if number % 3 == 0 
+#combined the divisible_by methods into one method(divisible_checker?) as they all do the same thing.
+
+#checks if number is a multiple of 3 or 5
+def divisible_checker?(number)
+	if number % 3 == 0  && number % 5 == 0
+		return 15
+	elsif	number % 3 == 0
+		return 3
+	elsif number % 5 == 0
+		return 5
 	else 
 		return false
-end
-	
-def is_divisible_by_five?(number)
-	return true if number % 5 == 0	
-	else 
-		return false
+	end
 end
 
-def is_divisible_by_fifteen?(number) 
-	return true if number % 15 == 0
-	else
-		return false
-end
 
 def fizzbuzz_says(number)
-	if is_divisible_by_fifteen?(number) == true
+	if divisible_checker?(number) == 15
 		return	"fizzbuzz"
-elsif
-		is_divisible_by_five?(number) == true
+	elsif
+		divisible_checker?(number) == 3
 		return "buzz"
-	else
-		is_divisible_by_three?(number) == true
+	elsif
+		divisible_checker?(number) == 5
 		return "fizz"
 	end
 end	
+
