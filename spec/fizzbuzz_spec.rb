@@ -5,7 +5,6 @@ describe 'fizzbuzz' do
 		
 		it 'divisible by 3' do
 			expect(is_divisible_by_three?(3)).to be true
-		
 		end
 		
 		it 'not divisible by 3' do
@@ -17,7 +16,7 @@ describe 'fizzbuzz' do
 		end
 		
 		it 'not divisible by 5' do
-			expect(is_divisible_by_five?(11)).to be false
+			expect(is_divisible_by_five?(9)).to be false
 		end
 		
 		it 'divisible by 15' do
@@ -26,8 +25,7 @@ describe 'fizzbuzz' do
 		
 		it 'not divisible by 15' do
 			expect(is_divisible_by_fifteen?(101)).to be false
-		end
-		
+		end	
 	end
 
 	context 'when playing a game fizzbuzz says' do
@@ -43,12 +41,7 @@ describe 'fizzbuzz' do
 		it 'when divisible by 3' do
 			expect(fizzbuzz_says(9)).to eq("fizz")
 		end
-		
-		
-		
 	end
-
-
 end
 
 

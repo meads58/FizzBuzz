@@ -1,25 +1,19 @@
 def is_divisible_by_three?(number)
 	return true if number % 3 == 0 
-	return false if number % 3 != 0
+	else 
+		return false
 end
 	
 def is_divisible_by_five?(number)
-	if number % 5 == 0
-		return true	
-	else
-		number % 5 != 0
-			return false
-	end
-	
+	return true if number % 5 == 0	
+	else 
+		return false
 end
 
 def is_divisible_by_fifteen?(number) 
-	if number % 15 == 0
-		return true
+	return true if number % 15 == 0
 	else
-		number % 15 != 0
 		return false
-	end
 end
 
 def fizzbuzz_says(number)
