@@ -1,34 +1,27 @@
+class Fizzbuzz
 
-def divisible_by_three number
-	divisor number, 3
-end
+  def divide_by_three?(number)
+    number % 3 == 0 ? true : false
+  end
 
-def divisible_by_five number
-	divisor number, 5
-end
+  def divide_by_five?(number)
+    number % 5 == 0 ? true : false
+  end
 
-def divisible_by_fifteen number
-	divisor number, 15
-end
+  def divide_by_fifteen?(number)
+    number % 15 == 0 ? true : false
+  end
 
-def divisor numerator, denominator
-	numerator % denominator == 0
-end
+  def say_fizz(number)
+    'fizz' if divide_by_three?(number)
+  end
 
-def say_fizz number
-	if divisible_by_three number
-	 'fizz'
-	end
-end
+  def say_fuzz(number)
+    'fuzz' if divide_by_five?(number)
+  end
 
-def say_buzz number
-	if divisible_by_five number
-		'buzz'
-	end
-end
+  def say_fizzbuzz(number)
+    'fizzbuzz' if divide_by_fifteen?(number)
+  end
 
-def say_fizzbuzz number
-	if divisible_by_fifteen number
-		'fizzbuzz'
-	end
 end
