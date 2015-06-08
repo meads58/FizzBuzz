@@ -1,19 +1,27 @@
-class FizzBuzz
+class Fizzbuzz
 
-  def divisible_by_three number
-    number % 3 == 0
+  def divisibleByThree? number
+    number % 3 == 0 ? true : false
   end
 
-  def divisible_by_five number
-    number % 5 == 0
+  def sayFizz number
+    'fizz' if divisibleByThree?(number)
   end
 
-  def divisible_by_fifteen number
-    number % 15 == 0
+  def divisibleByFive? number
+    number % 5 == 0 ? true : false
   end
 
-  def say_fizz number
-   'fizz' if divisible_by_three(number)
+  def sayBuzz number
+    'buzz' if divisibleByFive?(number)
+  end
+
+  def divisibleByFifteen? number
+    number % 15 == 0 ? true : false
+  end
+
+  def sayFizzbuzz number
+    'fizzbuzz' if divisibleByFifteen?(number)
   end
 
 
